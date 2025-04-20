@@ -2,56 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thanh-Tam Tran | AI Consultant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanh-Tam Tran</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
       color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    }
+
+    nav {
+      background-color: #2c3e50;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
       padding: 2rem;
     }
 
-    header {
+    .header {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      margin: 0;
+    .header h1 {
+      color: #2c3e50;
+      font-size: 3rem;
     }
 
-    p {
-      font-size: 1.2rem;
-      color: #666;
+    .section {
+      margin-bottom: 3rem;
     }
 
-    .contact {
-      margin-top: 2rem;
-      background: #fff;
-      padding: 1.5rem 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      max-width: 500px;
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2c3e50;
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact form */
+    .contact-form input, .contact-form textarea {
       width: 100%;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
     }
 
-    .contact h2 {
-      margin-bottom: 1rem;
+    .contact-form button {
+      background-color: #3498db;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
-    .contact ul {
-      list-style: none;
-      padding: 0;
+    .contact-form button:hover {
+      background-color: #2980b9;
     }
+  </style>
+</head>
 
-    .contact li {
-      margin: 0.5rem 0;
-    }
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#blog">Blog</a>
+    <a href="#work">My Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    .
+  <!-- Homepage Section -->
+  <section id="home" class="section">
+    <div class="container">
+      <div class="header">
+        <h1>Welcome to My Website</h1>
+        <p>Hi, I'm Thanh-Tam Tran. I'm an AI Consultant passionate about technology and innovation.</p>
+      </div>
+      <p>This is the homepage. Here, you will find all the info about my work, my projects, and my thoughts on AI and technology.</p>
+    </div>
+  </section>
+
+  <!-- Blog Section (Empty for now) -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="header">
+        <h1>Blog</h1>
+        <p>Coming soon! This section will contain my thoughts, ideas, and articles related to AI and technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Work Section (Empty for now) -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="header">
+        <h1>My Work</h1>
+        <p>Here you'll find all the projects I've worked on. Stay tuned for more updates!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="header">
+        <h1>Contact Me</h1>
+      </div>
+      <p>You can reach me via email or phone:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:chenthanhtam@gmail.com">chenthanhtam@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+84971509921">+84971509921</a></li>
+      </ul>
+      <form class="contact-form" action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Thanh-Tam Tran. All rights reserved.</p>
+    <p><a href="https://verysell.ai" target="_blank">Visit My AI Solutions Website</a></p>
+  </footer>
+</body>
+</html>
